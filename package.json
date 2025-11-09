@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "dev": "nodemon --exec ts-node index.ts",
-    "test-cache": "ts-node scripts/test-cache.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "lint": "eslint . --ext .ts",
-    "format": "prettier --write \"**/*.ts\""
+  "dev": "nodemon --exec ts-node index.ts",
+  "test-cache": "ts-node scripts/test-cache.ts",
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "postinstall": "npm run build",
+  "lint": "eslint . --ext .ts",
+  "format": "prettier --write \"**/*.ts\""
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",

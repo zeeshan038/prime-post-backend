@@ -61,7 +61,6 @@ export const getAllPosts = async (req: Request, res: Response) => {
     sort = "-createdAt",
     cursor,
   }: ListPostOptions = req.query;
- console.log(req.query);
   try {
     // Build filter
     const filter: any = { userId: id };
