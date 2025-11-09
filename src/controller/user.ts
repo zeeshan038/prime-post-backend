@@ -216,6 +216,7 @@ export const refreshToken = async (req: Request, res: Response) => {
  */
 export const logout = async (req: Request, res: Response) => {
   const { refreshToken } = req.cookies;
+  console.log("token",refreshToken)
   try {
     if (!refreshToken) {
       return res.status(400).json({
