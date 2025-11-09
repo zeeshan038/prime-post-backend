@@ -4,11 +4,11 @@ import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 // redis removed; using in-process cache instead
-import { startEngagementSimulator } from './jobs/simulateEngagement'
+import { startEngagementSimulator } from './src/jobs/simulateEngagement'
 
 // Local modules
-import connectDb from "./config/db";
-import routes from "./routes/index";
+import connectDb from "./src/config/db";
+import routes from "./src/routes/index";
 
 dotenv.config();
 
